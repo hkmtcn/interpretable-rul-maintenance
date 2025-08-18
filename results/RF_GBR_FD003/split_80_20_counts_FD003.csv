@@ -1,0 +1,3 @@
+set,count,ratio
+train,19776,0.8
+test,4944,0.2

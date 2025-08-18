@@ -1,0 +1,4 @@
+=== 80/20 SPLIT PROOF ===
+Total samples : 53759
+Train count   : 43007  (ratio=0.799996)
+Test count    : 10752  (ratio=0.200004)
