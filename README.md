@@ -63,14 +63,49 @@ All figures and CSVs used in the paper have been organized under `results/`. Sub
 ## Citing
 If you use this repository, please cite the paper and this code release.
 
-```bibtex
-@misc{ozcan_rul_dms_2025,
-  author = {{Hikmetcan Özcan}},
-  title  = {{Interpretable Ensemble Remaining Useful Life Prediction Enables Dynamic Maintenance Scheduling for Aircraft Engines}},
-  year   = {{2025}},
-  howpublished = {GitHub repository},
-  url    = {REPO_URL_HERE}
+```apa
+Özcan, H. Interpretable ensemble remaining useful life prediction enables dynamic maintenance scheduling for aircraft engines. Sci Rep 15, 39795 (2025). https://doi.org/10.1038/s41598-025-23473-2
 }
+```
+
+
+
+```ris
+TY  - JOUR
+AU  - Özcan, Hikmetcan
+PY  - 2025
+DA  - 2025/11/13
+TI  - Interpretable ensemble remaining useful life prediction enables dynamic maintenance scheduling for aircraft engines
+JO  - Scientific Reports
+SP  - 39795
+VL  - 15
+IS  - 1
+AB  - This study introduces a predictive-maintenance framework for aircraft engines that integrates accurate remaining-useful-life (RUL) estimation with a cost-aware scheduling strategy. The predictive layer employs ensemble learning by combining LightGBM, CatBoost, and Gradient Boosting, thereby enhancing both accuracy and stability. The scheduling layer initiates maintenance once the predicted RUL falls below a tunable threshold $$\tau$$(set to 15 cycles in experiments) and allocates service slots under cost and risk tolerance constraints, ensuring flexibility for conservative operation when necessary. The framework is evaluated on the NASA C-MAPSS dataset (FD001–FD004), covering single- and multi-condition as well as single- and multi-fault scenarios. Experimental results demonstrate strong performance on FD001 and FD003, with competitive results on FD002 and FD004. For instance, the LightGBM+CatBoost ensemble achieves RMSE = 6.62 and RUL Score = $$2.951 \times 10^{3}$$on FD001, while the three-model ensemble yields RMSE = 9.71 and RUL Score = $$1.037 \times 10^{4}$$on FD003. To ensure transparency and reliability, SHAP-based interpretability analysis is applied, highlighting critical sensors and operational cycles. The ensemble approach provides more balanced attributions, which enhances auditability and supports engineering validation in safety-critical domains. Overall, this study contributes to aviation predictive maintenance by delivering robust and interpretable RUL predictions and by translating them into tunable maintenance policies; however, these contributions are demonstrated on C-MAPSS and with a fixed illustrative threshold, so the reported gains should be interpreted as benchmark-specific until confirmed on real fleets and under alternative risk-aware policies.
+SN  - 2045-2322
+UR  - https://doi.org/10.1038/s41598-025-23473-2
+DO  - 10.1038/s41598-025-23473-2
+ID  - Özcan2025
+ER  - 
+
+```
+
+
+```bibtex
+@article{Ozcan2025InterpretableRUL,
+  author    = {Özcan, H.},
+  title     = {Interpretable ensemble remaining useful life prediction enables dynamic maintenance scheduling for aircraft engines},
+  journal   = {Scientific Reports},
+  year      = {2025},
+  volume    = {15},
+  pages     = {39795},
+  doi       = {10.1038/s41598-025-23473-2}
+}
+
+```
+
+```bibitem
+\bibitem{Ozcan2025}
+H.~Özcan, ``Interpretable ensemble remaining useful life prediction enables dynamic maintenance scheduling for aircraft engines,'' \emph{Scientific Reports}, vol.~15, p.~39795, 2025. doi: 10.1038/s41598-025-23473-2.
 ```
 
 ---
